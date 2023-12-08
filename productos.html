@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>𝕾𝖓𝖆𝖕 𝕲𝖑𝖔𝖜</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+  </style>
+</head>
+<body>     
+
+  <ul class="menu">
+    <li><a href="index.html">𝕴𝖓𝖎𝖈𝖎𝖔</a></li>
+    <li><a href="productos.html">𝕻𝖗𝖔𝖉𝖚𝖈𝖙𝖔𝖘</a></li>
+  </ul>
+
+  <h1>𝕻𝖗𝖔𝖉𝖚𝖈𝖙𝖔𝖘</h1>
+  <br>
+  <center>
+  <button onclick="filtrarPorCategoria('tenis')">TENIS</button>
+  <button onclick="filtrarPorCategoria('tacones')">TACONES</button>
+  <button onclick="filtrarPorCategoria('sandalias')">SANDALIAS</button>
+  <button onclick="filtrarPorCategoria('botas')">BOTAS</button>
+</center>
+
+<div class="ventanaEmergente" style="display: none;">
+  <form>
+      <label for="titulo">Título:</label>
+      <input type="text" class="titulo">
+      <label for="contenido">Contenido:</label>
+      <textarea class="contenido"></textarea>
+      <button type="button" onclick="guardarCambios()">Guardar</button>
+  </form>
+</div>
+  
+
+<div class="contenedor-tarjetas" id="productos"></div>
+    <div class="producto-card" id="producto3" >
+      <img class="producto-img" src="img/tenis (9).png" alt="TENIS">
+      <h3>Nike air force 1</h3>
+      <p>Calzado diseñado de corte bajo, con una parte superior de cuero y una suela de goma </p>
+      <p>Precio: $160000</p>
+      <button class="agregar">Agregar al carrito</button>
+    </div>
+    
+  
+      <div class="producto-card" id="producto4">
+        <img class="producto-img" src="img/tenis (8).png" alt="TENIS">
+        <h3>Jordan Retro 4</h3>
+        <p>Una lengüeta moldeada con una suela intermedia visible y un sistema de cordones.</p>
+        <p>Precio: $210000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>
+   
+   <div class="producto-card" id="producto5">
+        <img class="producto-img" src="img/tenis (7).png" alt="TENIS">
+        <h3>Air Jordan 1</h3>
+        <p>Tienen un perfil distintivo y una lengüeta acolchada para brindar comodidad.</p>
+        <p>Precio: $180000</p>
+        <button class="agregar">Agregar al carrito</button>
+     </div>
+     
+   <div class="producto-card" id="producto6">
+        <img class="producto-img" src="img/tenis (6).png" alt="TENIS">
+        <h3>Air Jordan 1</h3>
+        <p>Tienen un color palido y una lengüeta acolchada para brindar comodidad.</p>
+        <p>Precio: $180000</p>
+        <button class="agregar">Agregar al carrito</button>
+     </div>
+          
+   <div class="producto-card" id="producto7">
+       <img class="producto-img" src="img/tenis (5).png" alt="TENIS">
+       <h3>Converse All Star</h3>
+       <p>Los Converse All Star altos presentan un diseño de caña alta que cubre el tobillo.</p>
+       <p>Precio: $200000</p>
+       <button class="agregar">Agregar al carrito</button>
+    </div>
+            
+    <div class="producto-card" id="producto8">
+        <img class="producto-img" src="img/tenis (4).png" alt="TENIS">
+        <h3>Adidas Plr Casual</h3>
+        <p>destacan por su diseño contemporáneo y minimalista. Tienen líneas limpias y un aspecto moderno</p>
+        <p>Precio: $150000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>          
+            
+   <div class="producto-card" id="producto9">
+        <img class="producto-img" src="img/tenis (3).png" alt="TENIS">
+        <h3>Jordan Retro 4</h3>
+        <p>Una lengüeta moldeada con una suela intermedia visible y un color beige.</p>
+        <p>Precio: $700000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>           
+               
+      <div class="producto-card" id="producto10">
+        <img class="producto-img" src="img/tenis (2).png" alt="TENIS">
+        <h3>Converse All Star</h3>
+        <p>Presentan un diseño de caña alta que cubre el tobillo con un color azul.</p>
+        <p>Precio: $200000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>            
+                 
+      <div class="producto-card" id="producto11">
+        <img class="producto-img" src="img/tacones (9).png" alt="TACONES">
+        <h3>Christian Louboutin</h3>
+        <p>Conocidas por su suela brillante,elegancia y estilo de alta gama</p>
+        <p>Precio: $300000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>                
+                    
+      <div class="producto-card" id="producto12">
+        <img class="producto-img" src="img/tacones (8).png" alt="TACONES">
+        <h3>Jimmy Choo</h3>
+        <p>De lujo británica conocida por sus diseños modernos y glamurosos.</p>
+        <p>Precio: $500000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>              
+             
+      <div class="producto-card" id="producto13">
+        <img class="producto-img" src="img/tacones (6).png" alt="TACONES">
+        <h3>Gianvito Rossi</h3>
+        <p>Ofrece una comodidad, con tacones elegantes y contemporáneos.</p>
+        <p>Precio: $550000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>                    
+      
+      <div class="producto-card" id="producto14">
+        <img class="producto-img" src="img/tacones (7).png" alt="TACONES">
+        <h3>Stuart Weitzman</h3>
+        <p>Conocidos por sus diseños versátiles y cómodos,</p>
+        <p>Precio: $400000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>                   
+                      
+      <div class="producto-card" id="producto15">
+        <img class="producto-img" src="img/tacones (5).png" alt="TACONES">
+        <h3>Steve Madden</h3>
+        <p>Amplia variedad de estilos, desde opciones casuales hasta elegantes.</p>
+        <p>Precio: $250000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>                        
+                           
+      <div class="producto-card" id="producto16">
+        <img class="producto-img" src="img/tacones (4).png" alt="TACONES">
+        <h3>Zara</h3>
+        <p>Ofrece diseños exclusivos por su elegancia y originalidad.</p>
+        <p>Precio: $200000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>                        
+                             
+      <div class="producto-card" id="producto18">
+        <img class="producto-img" src="img/tacones (2).png" alt="TACONES">
+        <h3>Shein Chik</h3>
+        <p>Ofrece una suela comoda y elegante, a la vez de su punta brillante.</p>
+        <p>Precio: $350000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>                            
+                               
+      <div class="producto-card" id="producto19">
+        <img class="producto-img" src="img/tacones (3).png" alt="TACONES">
+        <h3>Shein</h3>
+        <p>Conocidas por su extravagante decoracion de mariposas moradas.</p>
+        <p>Precio: $390000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>                             
+                                  
+      <div class="producto-card" id="producto20">
+        <img class="producto-img" src="img/sandalias (4).png" alt="SANDALIAS">
+        <h3>Birkenstock</h3>
+        <p>Conocidas por su comodidad y estilo casual.</p>
+        <p>Precio: $90000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>                               
+                                   
+      <div class="producto-card" id="producto21">
+        <img class="producto-img" src="img/sandalias (8).png" alt="SANDALIAS">
+        <h3>Teva</h3>
+        <p>Especializadas en sandalias deportivas y activas.</p>
+        <p>Precio: $30000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>                                
+                                    
+      <div class="producto-card" id="producto22">
+        <img class="producto-img" src="img/sandalias (7).png" alt="SANDALIAS">
+        <h3>Havaianas</h3>
+        <p> chanclas de goma con diseños coloridos y divertidos.</p>
+        <p>Precio: $45000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>                                  
+
+      <div class="producto-card" id="producto23">
+        <img class="producto-img" src="img/sandalias (5).png" alt="SANDALIAS">
+        <h3>Teva</h3>
+        <p>Especializadas en sandalias deportivas y activas. </p>
+        <p>Precio: $42000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>                                      
+                                         
+      <div class="producto-card" id="producto24">
+        <img class="producto-img" src="img/sandalias (3).png" alt="SANDALIAS">
+        <h3>Havaianas</h3>
+        <p>Especializadas en sandalias deportivas y activas. </p>
+        <p>Precio: $70000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>                                        
+                                            
+                                            
+      <div class="producto-card" id="producto25">
+        <img class="producto-img" src="img/sandalias (2).png" alt="SANDALIAS">
+        <h3>Clarks</h3>
+        <p>Comodidad y calidad en las suelas y cuerdas.</p>
+        <p>Precio: $35000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>                                         
+                                             
+      <div class="producto-card" id="producto26">
+        <img class="producto-img" src="img/sandalias (1).png" alt="SANDALIAS">
+        <h3>Steve Madden</h3>
+        <p>diseños modernos y a la moda van desde sandalias informales hasta estilos más elegantes. </p>
+        <p>Precio: $40000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>                                          
+                                               
+      <div class="producto-card" id="producto28">
+        <img class="producto-img" src="img/sandalias (6).png" alt="SANDALIAS">
+        <h3>Reef</h3>
+        <p>Especializadas en sandalias para la playa,cómodas y estilizadas con un toque playero. </p>
+        <p>Precio: $50000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>                                            
+                                                  
+      <div class="producto-card" id="producto29">
+        <img class="producto-img" src="img/botas (2).png" alt="BOTAS">
+        <h3>Zara</h3>
+        <p>Estilo robusto con suela alta de cuero. </p>
+        <p>Precio: $100000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>                                                
+                                                   
+      <div class="producto-card" id="producto30">
+        <img class="producto-img" src="img/botas (3).png" alt="BOTAS">
+        <h3>Bata</h3>
+        <p>Estilo clasico de cuero rojo extravagante.</p>
+        <p>Precio: $500000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>                                                  
+                                                      
+                                                      
+      <div class="producto-card" id="producto31">
+        <img class="producto-img" src="img/botas (4).png" alt="BOTAS">
+        <h3>Shein</h3>
+        <p>Estilo robusto con suela media de cuero. </p>
+        <p>Precio: $450000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>                                                    
+                                                       
+      <div class="producto-card" id="producto32">
+        <img class="producto-img" src="img/botas (5).png" alt="BOTAS">
+        <h3>Berska</h3>
+        <p>Diseño unico de cuero vino y suela gruesa. </p>
+        <p>Precio: $200000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>                                                     
+                                                          
+      <div class="producto-card" id="producto33">
+        <img class="producto-img" src="img/botas (6).png" alt="BOTAS">
+        <h3>Bata</h3>
+        <p>Clasicas elegante de terciopelo super altas negras.</p>
+        <p>Precio: $600000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>                                                       
+                                                         
+      <div class="producto-card" id="producto34">
+        <img class="producto-img" src="img/botas (7).png" alt="BOTAS">
+        <h3>Shein</h3>
+        <p>Con cuero verde y suela alta de madera original.</p>
+        <p>Precio: $550000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>                                                         
+                                                              
+                                                              
+      <div class="producto-card" id="producto2">
+        <img class="producto-img" src="img/botas (8).png" alt="BOTAS">
+        <h3>Shein plus</h3>
+        <p>Con cuero beige y suela alta de madera original.</p>
+        <p>Precio: $ 80000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>                                                           
+                                                                
+      <div class="producto-card" id="producto1">
+        <img class="producto-img" src="img/botas.png" alt="BOTAS">
+        <h3>Berska</h3>
+        <p>Estilo robusto con suela media de cuero color negro. </p>
+        <p>Precio: $200000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>
+                                                                   
+
+                                                                  
+    <div id="carrito">
+    <img id="carrito-img" src="img/settings (1).png" alt="Carrito de compras">
+
+    <div id="productos-en-carrito"></div>
+
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+<footer>
+  <center><p>© 2023 Meliza Rodriguez Soler. Todos los derechos reservados.</p></center>
+</footer>
+</html>

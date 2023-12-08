@@ -1,0 +1,201 @@
+*{
+  margin: auto;
+  background-color: #fff;
+}
+
+#carrito-img {
+  width: 50px; 
+  height: auto;
+  cursor: pointer; 
+}
+
+#carrito {
+  position: fixed;
+  top: 20px; 
+  right: 20px; 
+}
+
+
+#productos {
+  display: flex; 
+  justify-content: center; 
+  text-align: center;
+  flex-wrap: wrap;
+
+}
+
+.producto-card {
+  border: 1px solid #fff;
+  padding: 10px;
+  width: 285px;
+  text-align: center;
+  margin: 10px;
+  display: inline-block; 
+  vertical-align: top; 
+  font-size: 16px;
+  display: flexbox;
+}
+
+
+
+.producto-img {
+width: 200%; 
+height: 350px; 
+max-width: 60%; 
+max-height: 150px; 
+object-fit: cover;
+ 
+}
+
+
+
+/* Estilos para el botón de agregar */
+.agregar {
+  background-color: #000;
+  color: #fff; 
+  padding: 8px 16px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+
+/* Estilos para el botón de eliminar */
+.eliminar {
+  background-color: #000; 
+  color: white;
+  padding: 6px 16px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+
+/* Estilos al pasar el cursor sobre los botones */
+.agregar:hover, .eliminar:hover {
+  opacity: 0.8; 
+}
+
+h1{
+  text-align: center;
+  margin-top: 100px; 
+  font-size: 4.5em;
+}
+
+/* Estilos para el índice */
+.menu {
+  background-color: #000;
+  color: #000;
+  padding: 10px;
+  text-align: center;
+}
+
+menu li {
+  background-color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+
+menu a {
+  color: white;
+  text-decoration: none;
+  margin:  15px;
+  padding: 20px;
+  font-size: 16px;
+  transition: color 0.9s ease-in-out;
+}
+
+menu a:hover {
+  color: #fff;
+}
+
+section {
+  padding: 20px;
+}
+
+
+.carousel {
+  width: 1000px; 
+  overflow: hidden; 
+  height: 400px;
+}
+
+.carousel-images {
+  display: flex; 
+  
+}
+
+.carousel-images img {
+  width: 300px; 
+  height: 200px; 
+  object-fit: cover;
+}
+
+
+h2{
+text-align: center;
+margin-top: 50px; 
+font-size: 3em;
+color: #000;
+}
+h3{
+text-align: center;
+margin-top: 50px; 
+font-size: 2em;
+color: #000;
+}
+
+
+button:hover {
+background-color: #fff;
+}
+
+@media screen and (min-width: 352px) and (max-width: 480px) {
+  .producto-card {
+    width: 100%; /* Ocupar todo el ancho */
+  }
+
+  .producto-img {
+    height: 150px; /* Ajustar la altura de la imagen */
+  }
+
+  h1 {
+    margin-top: 30px; /* Ajustar el margen superior */
+    font-size: 2.5em; /* Ajustar el tamaño de fuente */
+  }
+
+  h2, h3 {
+    margin-top: 20px; /* Ajustar el margen superior */
+    font-size: 1.5em; /* Ajustar el tamaño de fuente */
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .producto-card {
+    width: 100%; /* Ocupar todo el ancho en pantallas pequeñas */
+  }
+
+  h1 {
+    margin-top: 30px; /* Ajustar el margen superior */
+    font-size: 2.5em; /* Ajustar el tamaño de fuente */
+  }
+
+  h2,
+  h3 {
+    margin-top: 20px; /* Ajustar el margen superior */
+    font-size: 1.5em; /* Ajustar el tamaño de fuente */
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 920px) {
+  .producto-card {
+    width: 100%; /* Ocupar todo el ancho en pantallas medianas */
+  }
+
+  h1 {
+    margin-top: 30px; /* Ajustar el margen superior */
+    font-size: 2.5em; /* Ajustar el tamaño de fuente */
+  }
+
+  h2,
+  h3 {
+    margin-top: 20px; /* Ajustar el margen superior */
+    font-size: 1.5em; /* Ajustar el tamaño de fuente */
+  }
+}
